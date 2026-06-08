@@ -8,9 +8,9 @@ import requests
 # TELEGRAM CONFIG
 # =========================================================
 
-TELEGRAM_BOT_TOKEN = "8842780517:AAEdZJL_oZ0udwF29Qd9Sk5tmRJCqCC-PHM"
+TELEGRAM_BOT_TOKEN = "YOUR BOT TOKEN GOES HERE"
 
-TELEGRAM_CHAT_ID = "-1003902549294"
+TELEGRAM_CHAT_ID = "YOUR CHAT ID GOES HERE"
 
 TELEGRAM_ENABLED = True
 
@@ -111,11 +111,8 @@ class Analyzer:
                     f"TradingView:\n{tv_link}"
                 )
 
-                print(message)
+               # print(message)
                 send_telegram_message(message)
-
-                with open("signals.txt", "a") as file:
-                    file.write(message + "\n")
 
                 #send_telegram_message(message)
 
